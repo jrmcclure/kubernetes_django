@@ -1,5 +1,5 @@
 FROM python:3.6-slim
-MAINTAINER Mark Gituma <mark.gituma@gmail.com>
+MAINTAINER Jesse McClure <jesse@jrmcclure.com>
 
 ENV PROJECT_ROOT /app
 WORKDIR $PROJECT_ROOT
