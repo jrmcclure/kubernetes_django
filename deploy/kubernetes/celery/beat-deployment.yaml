@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: celery-beat
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: celery-beat
-          image: jrmcclure/k8_django_minikube:v4
+          image: jrmcclure/k8_django_minikube:v4.1
           command: ['celery', '-A', 'kubernetes_django', 'beat', '-l', 'debug']
           env:
             - name: POSTGRES_USER

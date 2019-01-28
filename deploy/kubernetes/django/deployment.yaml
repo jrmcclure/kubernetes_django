@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: django
-          image: jrmcclure/k8_django_minikube:v4
+          image: jrmcclure/k8_django_minikube:v4.1
           ports:
             - containerPort: 8000
           env:
